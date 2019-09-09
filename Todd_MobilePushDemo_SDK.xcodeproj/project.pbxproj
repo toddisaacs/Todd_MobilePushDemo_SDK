@@ -197,7 +197,7 @@
 						CreatedOnToolsVersion = 10.3;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -439,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Todd_MobilePushDemo_SDK/Todd_MobilePushDemo_SDK.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C759Q4CFH;
 				INFOPLIST_FILE = Todd_MobilePushDemo_SDK/Info.plist;
@@ -457,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Todd_MobilePushDemo_SDK/Todd_MobilePushDemo_SDK.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C759Q4CFH;
 				INFOPLIST_FILE = Todd_MobilePushDemo_SDK/Info.plist;
