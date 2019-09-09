@@ -47,6 +47,7 @@
 		DA8A979023266B6100E8E44F /* Todd_MobilePushDemo_SDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Todd_MobilePushDemo_SDKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8A979423266B6100E8E44F /* Todd_MobilePushDemo_SDKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todd_MobilePushDemo_SDKUITests.swift; sourceTree = "<group>"; };
 		DA8A979623266B6100E8E44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA8A97A223266CC800E8E44F /* Todd_MobilePushDemo_SDK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Todd_MobilePushDemo_SDK.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		DA8A977323266B5F00E8E44F /* Todd_MobilePushDemo_SDK */ = {
 			isa = PBXGroup;
 			children = (
+				DA8A97A223266CC800E8E44F /* Todd_MobilePushDemo_SDK.entitlements */,
 				DA8A977423266B5F00E8E44F /* AppDelegate.swift */,
 				DA8A977623266B5F00E8E44F /* ViewController.swift */,
 				DA8A977823266B6000E8E44F /* Main.storyboard */,
@@ -193,6 +195,11 @@
 				TargetAttributes = {
 					DA8A977023266B5F00E8E44F = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					DA8A978423266B6100E8E44F = {
 						CreatedOnToolsVersion = 10.3;
