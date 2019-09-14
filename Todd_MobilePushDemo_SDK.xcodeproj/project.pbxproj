@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2D4E206769D20962D5537B61 /* Pods_Todd_MobilePushDemo_SDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BAD881F354B5AE2C7A993C /* Pods_Todd_MobilePushDemo_SDKTests.framework */; };
-		43DAD0944D6FB023B89EF2A3 /* Pods_Todd_MobilePushDemo_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA362067BE316ED5FFF3623 /* Pods_Todd_MobilePushDemo_SDK.framework */; };
 		D1AF122C3C348980CECBFA57 /* Pods_Todd_MobilePushDemo_SDKUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B74A62542F5541A88FE9EF8 /* Pods_Todd_MobilePushDemo_SDKUITests.framework */; };
 		DA8A977523266B5F00E8E44F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A977423266B5F00E8E44F /* AppDelegate.swift */; };
 		DA8A977723266B5F00E8E44F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A977623266B5F00E8E44F /* ViewController.swift */; };
@@ -17,6 +16,8 @@
 		DA8A977F23266B6100E8E44F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8A977D23266B6100E8E44F /* LaunchScreen.storyboard */; };
 		DA8A978A23266B6100E8E44F /* Todd_MobilePushDemo_SDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A978923266B6100E8E44F /* Todd_MobilePushDemo_SDKTests.swift */; };
 		DA8A979523266B6100E8E44F /* Todd_MobilePushDemo_SDKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A979423266B6100E8E44F /* Todd_MobilePushDemo_SDKUITests.swift */; };
+		DAA5832E232C671500827E80 /* MarketingCloudSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA5832D232C671500827E80 /* MarketingCloudSDK.framework */; };
+		DAA58333232C6A9300827E80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA58332232C6A9300827E80 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,9 @@
 		DA8A979423266B6100E8E44F /* Todd_MobilePushDemo_SDKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todd_MobilePushDemo_SDKUITests.swift; sourceTree = "<group>"; };
 		DA8A979623266B6100E8E44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8A97A223266CC800E8E44F /* Todd_MobilePushDemo_SDK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Todd_MobilePushDemo_SDK.entitlements; sourceTree = "<group>"; };
+		DAA5832D232C671500827E80 /* MarketingCloudSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarketingCloudSDK.framework; path = Pods/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK.framework; sourceTree = "<group>"; };
+		DAA58330232C67D400827E80 /* MarketingCloudSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MarketingCloudSDK.bundle; path = Pods/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK.bundle; sourceTree = "<group>"; };
+		DAA58332232C6A9300827E80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DAB8BF202B56E96433FCDFDB /* Pods-Todd_MobilePushDemo_SDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todd_MobilePushDemo_SDKTests.release.xcconfig"; path = "Target Support Files/Pods-Todd_MobilePushDemo_SDKTests/Pods-Todd_MobilePushDemo_SDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2F91A417776BFACB80DE52D /* Pods-Todd_MobilePushDemo_SDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todd_MobilePushDemo_SDKTests.debug.xcconfig"; path = "Target Support Files/Pods-Todd_MobilePushDemo_SDKTests/Pods-Todd_MobilePushDemo_SDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EABE1A6546BEFF62704FC903 /* Pods-Todd_MobilePushDemo_SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todd_MobilePushDemo_SDK.release.xcconfig"; path = "Target Support Files/Pods-Todd_MobilePushDemo_SDK/Pods-Todd_MobilePushDemo_SDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43DAD0944D6FB023B89EF2A3 /* Pods_Todd_MobilePushDemo_SDK.framework in Frameworks */,
+				DAA5832E232C671500827E80 /* MarketingCloudSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,13 +104,13 @@
 				0ACF5ABD202BCA63E423E2FA /* Pods-Todd_MobilePushDemo_SDKUITests.debug.xcconfig */,
 				08D5060C6F3F8069C071DBC3 /* Pods-Todd_MobilePushDemo_SDKUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		769AC00E7FEE0F4B6427D462 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAA5832D232C671500827E80 /* MarketingCloudSDK.framework */,
 				CFA362067BE316ED5FFF3623 /* Pods_Todd_MobilePushDemo_SDK.framework */,
 				15BAD881F354B5AE2C7A993C /* Pods_Todd_MobilePushDemo_SDKTests.framework */,
 				6B74A62542F5541A88FE9EF8 /* Pods_Todd_MobilePushDemo_SDKUITests.framework */,
@@ -117,6 +121,8 @@
 		DA8A976823266B5F00E8E44F = {
 			isa = PBXGroup;
 			children = (
+				DAA58332232C6A9300827E80 /* Constants.swift */,
+				DAA58330232C67D400827E80 /* MarketingCloudSDK.bundle */,
 				DA8A977323266B5F00E8E44F /* Todd_MobilePushDemo_SDK */,
 				DA8A978823266B6100E8E44F /* Todd_MobilePushDemo_SDKTests */,
 				DA8A979323266B6100E8E44F /* Todd_MobilePushDemo_SDKUITests */,
@@ -396,6 +402,7 @@
 			files = (
 				DA8A977723266B5F00E8E44F /* ViewController.swift in Sources */,
 				DA8A977523266B5F00E8E44F /* AppDelegate.swift in Sources */,
+				DAA58333232C6A9300827E80 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,7 +581,12 @@
 				CODE_SIGN_ENTITLEMENTS = Todd_MobilePushDemo_SDK/Todd_MobilePushDemo_SDK.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C759Q4CFH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/MarketingCloudSDK/MarketingCloudSDK",
+				);
 				INFOPLIST_FILE = Todd_MobilePushDemo_SDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -594,7 +606,12 @@
 				CODE_SIGN_ENTITLEMENTS = Todd_MobilePushDemo_SDK/Todd_MobilePushDemo_SDK.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C759Q4CFH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/MarketingCloudSDK/MarketingCloudSDK",
+				);
 				INFOPLIST_FILE = Todd_MobilePushDemo_SDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
