@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		2D4E206769D20962D5537B61 /* Pods_Todd_MobilePushDemo_SDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BAD881F354B5AE2C7A993C /* Pods_Todd_MobilePushDemo_SDKTests.framework */; };
 		D1AF122C3C348980CECBFA57 /* Pods_Todd_MobilePushDemo_SDKUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B74A62542F5541A88FE9EF8 /* Pods_Todd_MobilePushDemo_SDKUITests.framework */; };
+		DA24A4D92337BDB50019ABFF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA24A4D82337BDB50019ABFF /* Model.swift */; };
 		DA8A977523266B5F00E8E44F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A977423266B5F00E8E44F /* AppDelegate.swift */; };
-		DA8A977723266B5F00E8E44F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A977623266B5F00E8E44F /* ViewController.swift */; };
+		DA8A977723266B5F00E8E44F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A977623266B5F00E8E44F /* HomeViewController.swift */; };
 		DA8A977A23266B6000E8E44F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8A977823266B6000E8E44F /* Main.storyboard */; };
 		DA8A977C23266B6100E8E44F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8A977B23266B6100E8E44F /* Assets.xcassets */; };
 		DA8A977F23266B6100E8E44F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8A977D23266B6100E8E44F /* LaunchScreen.storyboard */; };
@@ -18,6 +19,7 @@
 		DA8A979523266B6100E8E44F /* Todd_MobilePushDemo_SDKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A979423266B6100E8E44F /* Todd_MobilePushDemo_SDKUITests.swift */; };
 		DAA5832E232C671500827E80 /* MarketingCloudSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA5832D232C671500827E80 /* MarketingCloudSDK.framework */; };
 		DAA58333232C6A9300827E80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA58332232C6A9300827E80 /* Constants.swift */; };
+		DAA58335233643A200827E80 /* InBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA58334233643A200827E80 /* InBoxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +46,10 @@
 		5EB0141D26B5996BEC4B458A /* Pods-Todd_MobilePushDemo_SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todd_MobilePushDemo_SDK.debug.xcconfig"; path = "Target Support Files/Pods-Todd_MobilePushDemo_SDK/Pods-Todd_MobilePushDemo_SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		6B74A62542F5541A88FE9EF8 /* Pods_Todd_MobilePushDemo_SDKUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todd_MobilePushDemo_SDKUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA362067BE316ED5FFF3623 /* Pods_Todd_MobilePushDemo_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todd_MobilePushDemo_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA24A4D82337BDB50019ABFF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DA8A977123266B5F00E8E44F /* Todd_MobilePushDemo_SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todd_MobilePushDemo_SDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8A977423266B5F00E8E44F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA8A977623266B5F00E8E44F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA8A977623266B5F00E8E44F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DA8A977923266B6000E8E44F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA8A977B23266B6100E8E44F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8A977E23266B6100E8E44F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 		DAA5832D232C671500827E80 /* MarketingCloudSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarketingCloudSDK.framework; path = Pods/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK.framework; sourceTree = "<group>"; };
 		DAA58330232C67D400827E80 /* MarketingCloudSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MarketingCloudSDK.bundle; path = Pods/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK.bundle; sourceTree = "<group>"; };
 		DAA58332232C6A9300827E80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DAA58334233643A200827E80 /* InBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InBoxViewController.swift; sourceTree = "<group>"; };
 		DAB8BF202B56E96433FCDFDB /* Pods-Todd_MobilePushDemo_SDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todd_MobilePushDemo_SDKTests.release.xcconfig"; path = "Target Support Files/Pods-Todd_MobilePushDemo_SDKTests/Pods-Todd_MobilePushDemo_SDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2F91A417776BFACB80DE52D /* Pods-Todd_MobilePushDemo_SDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todd_MobilePushDemo_SDKTests.debug.xcconfig"; path = "Target Support Files/Pods-Todd_MobilePushDemo_SDKTests/Pods-Todd_MobilePushDemo_SDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EABE1A6546BEFF62704FC903 /* Pods-Todd_MobilePushDemo_SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todd_MobilePushDemo_SDK.release.xcconfig"; path = "Target Support Files/Pods-Todd_MobilePushDemo_SDK/Pods-Todd_MobilePushDemo_SDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 		DA8A976823266B5F00E8E44F = {
 			isa = PBXGroup;
 			children = (
+				DA24A4D82337BDB50019ABFF /* Model.swift */,
 				DAA58332232C6A9300827E80 /* Constants.swift */,
 				DAA58330232C67D400827E80 /* MarketingCloudSDK.bundle */,
 				DA8A977323266B5F00E8E44F /* Todd_MobilePushDemo_SDK */,
@@ -147,11 +152,12 @@
 			children = (
 				DA8A97A223266CC800E8E44F /* Todd_MobilePushDemo_SDK.entitlements */,
 				DA8A977423266B5F00E8E44F /* AppDelegate.swift */,
-				DA8A977623266B5F00E8E44F /* ViewController.swift */,
+				DA8A977623266B5F00E8E44F /* HomeViewController.swift */,
 				DA8A977823266B6000E8E44F /* Main.storyboard */,
 				DA8A977B23266B6100E8E44F /* Assets.xcassets */,
 				DA8A977D23266B6100E8E44F /* LaunchScreen.storyboard */,
 				DA8A978023266B6100E8E44F /* Info.plist */,
+				DAA58334233643A200827E80 /* InBoxViewController.swift */,
 			);
 			path = Todd_MobilePushDemo_SDK;
 			sourceTree = "<group>";
@@ -400,9 +406,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA8A977723266B5F00E8E44F /* ViewController.swift in Sources */,
+				DA24A4D92337BDB50019ABFF /* Model.swift in Sources */,
+				DA8A977723266B5F00E8E44F /* HomeViewController.swift in Sources */,
 				DA8A977523266B5F00E8E44F /* AppDelegate.swift in Sources */,
 				DAA58333232C6A9300827E80 /* Constants.swift in Sources */,
+				DAA58335233643A200827E80 /* InBoxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

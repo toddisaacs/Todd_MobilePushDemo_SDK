@@ -9,6 +9,7 @@
 import UIKit
 import MarketingCloudSDK
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
@@ -31,6 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
       .sfmc_setAnalyticsEnabled(pushAnalytics as NSNumber)
       .sfmc_setPiAnalyticsEnabled(piAnalytics as NSNumber)
       .sfmc_build()!
+    
+    Model.builder = builder
     
     var success = false
     
@@ -148,6 +151,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
   func applicationWillTerminate(_ application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+      print("applicationWillTerminate")
   }
 }
 extension AppDelegate: MarketingCloudSDKURLHandlingDelegate {
